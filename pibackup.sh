@@ -29,5 +29,5 @@ echo "Starting Backup"
 dd if=/dev/mmcblk0 of=${BackupDir}/$(date +%Y-%m-%d).img bs=1M status=progress
 echo "Backup Complete"
 echo "Starting PiShrink"
-source /usr/local/bin/pishrink.sh ${BackupDir}/$(date +%Y%m%d).img
+source /usr/local/bin/pishrink.sh ${BackupDir}/$(date +%Y-%m-%d).img
 # umount /media/backup
